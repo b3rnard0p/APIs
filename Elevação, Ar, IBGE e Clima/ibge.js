@@ -1,4 +1,3 @@
-// Função para verificar se a localização está no Brasil e buscar dados do IBGE
 function checkLocationAndFetchIBGEData(lat, lng) {
   const location = new google.maps.LatLng(lat, lng);
   geocoder.geocode({ location: location }, (results, status) => {
@@ -36,7 +35,6 @@ function checkLocationAndFetchIBGEData(lat, lng) {
   });
 }
 
-// Função para buscar dados do IBGE com base no nome do município
 async function fetchIBGEData(nomeMunicipio) {
   try {
     const urlMunicipios = `https://servicodados.ibge.gov.br/api/v1/localidades/municipios`;
@@ -82,7 +80,6 @@ async function fetchIBGEData(nomeMunicipio) {
   }
 }
 
-// Função para buscar informações específicas de um município no IBGE
 async function getInformacoesMunicipio(codMunicipio, indicadorId) {
   const url = `https://servicodados.ibge.gov.br/api/v1/pesquisas/indicadores/${indicadorId}/resultados/${codMunicipio}`;
   try {
