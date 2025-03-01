@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #1a1a1a; /* Fundo escuro */
+  color: #ffffff; /* Texto branco */
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  border: 2px solid #9b0000; /* Borda vermelha */
+  border-radius: 8px;
+}
+
+#elevation-result,
+#air-quality-result,
+#ibge-result,
+#weather-result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #9e0000; /* Borda vermelha */
+  background-color: #262626; /* Fundo escuro */
+  color: #ffffff; /* Texto branco */
+}
+
+.moderate {
+  background-color: #ffcc00; /* Amarelo para moderado */
+  color: #000000; /* Texto preto */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.good {
+  background-color: #28a745; /* Verde para bom */
+  color: #ffffff; /* Texto branco */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.unhealthy {
+  background-color: #88000e; /* Vermelho para insalubre */
+  color: #ffffff; /* Texto branco */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#input-container {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 200px;
+  border: 2px solid #750000; /* Borda vermelha */
+  border-radius: 5px;
+  background-color: #262626; /* Fundo escuro */
+  color: #ffffff; /* Texto branco */
+}
+
+input::placeholder {
+  color: #999999; /* Placeholder cinza */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #cc0000; /* Fundo vermelho */
+  color: #ffffff; /* Texto branco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a00000; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Estilo para links (caso precise) */
+a {
+  color: #af0000; /* Links em vermelho */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
