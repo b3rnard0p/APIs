@@ -1,4 +1,3 @@
-// Função para buscar a elevação para uma coordenada específica
 function fetchElevation(lat, lng) {
   const location = new google.maps.LatLng(lat, lng);
   elevationService.getElevationForLocations(
