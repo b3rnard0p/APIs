@@ -3,7 +3,6 @@ let elevationService;
 let marker;
 let geocoder;
 
-// Função para inicializar o mapa
 function initMap() {
   const initialPosition = { lat: -25.344, lng: 131.031 };
   map = new google.maps.Map(document.getElementById("map"), {
@@ -47,7 +46,6 @@ function initMap() {
   getWeatherData(initialPosition.lat, initialPosition.lng);
 }
 
-// Função para atualizar o mapa com nova latitude e longitude
 function updateMap() {
   const lat = parseFloat(document.getElementById("latitude").value);
   const lng = parseFloat(document.getElementById("longitude").value);
