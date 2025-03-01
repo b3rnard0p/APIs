@@ -1,4 +1,3 @@
-// Função para consultar a qualidade do ar para uma coordenada
 async function getAirQuality(lat, lng) {
   const apiKey = "AIzaSyBDeLlEa_PZ0mJ2DivU0uYAjoWKvYhBPgM";
   const url = `https://airquality.googleapis.com/v1/currentConditions:lookup?key=${apiKey}`;
@@ -17,7 +16,6 @@ async function getAirQuality(lat, lng) {
   const category = data.indexes[0].category || "";
   const pollutant = data.indexes[0].dominantPollutant || "";
 
-  // Tradução das categorias de qualidade do ar
   const categoryTranslations = {
     "Good air quality": "Boa qualidade do ar",
     "Moderate air quality": "Qualidade do ar moderada",
@@ -27,7 +25,6 @@ async function getAirQuality(lat, lng) {
     "Hazardous air quality": "Qualidade do ar perigosa",
   };
 
-  // Tradução dos principais poluentes
   const pollutantTranslations = {
     pm25: "Material Particulado Fino (PM2.5)",
     pm10: "Material Particulado Grosso (PM10)",
@@ -37,7 +34,6 @@ async function getAirQuality(lat, lng) {
     co: "Monóxido de Carbono (CO)",
   };
 
-  // Aplicar tradução correta ou manter original se não encontrado
   const translatedCategory = categoryTranslations[category] || "Desconhecido";
   const translatedPollutant = pollutantTranslations[pollutant] || pollutant;
 
