@@ -1,6 +1,5 @@
-// Função para buscar dados climáticos diretamente da WeatherAPI
 async function getWeatherData(lat, lng) {
-  const apiKey = "ba84b52fc7d24255a6830921252502"; // Sua chave da WeatherAPI
+  const apiKey = "Sua Chave";
   const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lng}&aqi=no`;
 
   try {
@@ -17,7 +16,6 @@ async function getWeatherData(lat, lng) {
   }
 }
 
-// Função para exibir os dados climáticos
 function displayWeatherData(data) {
   const weatherResult = document.getElementById("weather-result");
   if (data.error) {
