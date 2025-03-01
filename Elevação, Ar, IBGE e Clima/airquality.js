@@ -1,5 +1,5 @@
 async function getAirQuality(lat, lng) {
-  const apiKey = "AIzaSyBDeLlEa_PZ0mJ2DivU0uYAjoWKvYhBPgM";
+  const apiKey = "Sua Chave";
   const url = `https://airquality.googleapis.com/v1/currentConditions:lookup?key=${apiKey}`;
 
   const response = await fetch(url, {
