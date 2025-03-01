@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa com Elevação, Qualidade do Ar, Dados do IBGE e Clima</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDeLlEa_PZ0mJ2DivU0uYAjoWKvYhBPgM&libraries=maps,marker,elevation"
+    ></script>
+    <script src="map.js"></script>
+    <script src="elevation.js"></script>
+    <script src="airquality.js"></script>
+    <script src="ibge.js"></script>
+    <script src="climate.js"></script>
+  </head>
+  <body>
+    <h1>DAQ</h1>
+    <div id="input-container">
+      <label for="latitude">Latitude:</label>
+      <input
+        type="number"
+        id="latitude"
+        step="any"
+        placeholder="Digite a Latitude"
+      />
+      <label for="longitude">Longitude:</label>
+      <input
+        type="number"
+        id="longitude"
+        step="any"
+        placeholder="Digite a Longitude"
+      />
+      <button onclick="updateMap()">Atualizar Mapa</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="elevation-result"></div>
+
+    <div id="air-quality-result"></div>
+
+    <div id="ibge-result"></div>
+
+    <div id="weather-result"></div>
+  </body>
+</html>
