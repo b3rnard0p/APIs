@@ -1,14 +1,14 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
-  background-color: #1a1a1a; /* Fundo escuro */
-  color: #ffffff; /* Texto branco */
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 
 #map {
   height: 400px;
   width: 100%;
-  border: 2px solid #9b0000; /* Borda vermelha */
+  border: 2px solid #9b0000;
   border-radius: 8px;
 }
 
@@ -19,28 +19,28 @@ body {
   margin-top: 20px;
   padding: 15px;
   border-radius: 8px;
-  border: 2px solid #9e0000; /* Borda vermelha */
-  background-color: #262626; /* Fundo escuro */
-  color: #ffffff; /* Texto branco */
+  border: 2px solid #9e0000;
+  background-color: #262626;
+  color: #ffffff;
 }
 
 .moderate {
-  background-color: #ffcc00; /* Amarelo para moderado */
-  color: #000000; /* Texto preto */
+  background-color: #ffcc00;
+  color: #000000;
   padding: 15px;
   border-radius: 5px;
 }
 
 .good {
-  background-color: #28a745; /* Verde para bom */
-  color: #ffffff; /* Texto branco */
+  background-color: #28a745;
+  color: #ffffff;
   padding: 15px;
   border-radius: 5px;
 }
 
 .unhealthy {
-  background-color: #88000e; /* Vermelho para insalubre */
-  color: #ffffff; /* Texto branco */
+  background-color: #88000e;
+  color: #ffffff;
   padding: 15px;
   border-radius: 5px;
 }
@@ -53,20 +53,20 @@ input {
   padding: 10px;
   margin-bottom: 15px;
   width: 200px;
-  border: 2px solid #750000; /* Borda vermelha */
+  border: 2px solid #750000;
   border-radius: 5px;
-  background-color: #262626; /* Fundo escuro */
-  color: #ffffff; /* Texto branco */
+  background-color: #262626;
+  color: #ffffff;
 }
 
 input::placeholder {
-  color: #999999; /* Placeholder cinza */
+  color: #999999;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #cc0000; /* Fundo vermelho */
-  color: #ffffff; /* Texto branco */
+  background-color: #cc0000;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -75,12 +75,11 @@ button {
 }
 
 button:hover {
-  background-color: #a00000; /* Vermelho mais escuro ao passar o mouse */
+  background-color: #a00000;
 }
 
-/* Estilo para links (caso precise) */
 a {
-  color: #af0000; /* Links em vermelho */
+  color: #af0000;
   text-decoration: none;
 }
 
