@@ -1,4 +1,4 @@
-**Neste Repositório demosntro meus estudos e projetos com APIs**
+**Neste Repositório demonstro meus estudos e projetos com APIs**
 
 ---
 
